@@ -19,7 +19,7 @@ export class CategoryController {
 	constructor(private readonly categoryService: CategoryService) {}
 
 	@Auth()
-	@Get('by-storeId/:storeId')
+	@Get('by-store/:storeId')
 	async getByStoreId(@Param('storeId') storeId: string) {
 		return this.categoryService.getByStoreId(storeId)
 	}

@@ -8,8 +8,9 @@ import { ColorModule } from './color/color.module';
 import { CategoryModule } from './category/category.module';
 import { FileModule } from './file/file.module';
 import { ProductModule } from './product/product.module';
+import { ReviewModule } from './review/review.module';
 
 @Module({
-	imports: [ConfigModule.forRoot(), PrismaModule, AuthModule, UserModule, StoreModule, ColorModule, CategoryModule, FileModule, ProductModule]
+	imports: [ConfigModule.forRoot(), PrismaModule, AuthModule, UserModule, StoreModule, ColorModule, CategoryModule, FileModule, ProductModule, ReviewModule]
 })
 export class AppModule {}

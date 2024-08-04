@@ -19,7 +19,7 @@ export class ColorController {
 	constructor(private readonly colorService: ColorService) {}
 
 	@Auth()
-	@Get('by-storeId/:storeId')
+	@Get('by-store/:storeId')
 	async getByStoreId(@Param('storeId') storeId: string) {
 		return this.colorService.getByStoreId(storeId)
 	}
