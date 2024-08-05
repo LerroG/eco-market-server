@@ -9,8 +9,9 @@ import { CategoryModule } from './category/category.module';
 import { FileModule } from './file/file.module';
 import { ProductModule } from './product/product.module';
 import { ReviewModule } from './review/review.module';
+import { OrderModule } from './order/order.module';
 
 @Module({
-	imports: [ConfigModule.forRoot(), PrismaModule, AuthModule, UserModule, StoreModule, ColorModule, CategoryModule, FileModule, ProductModule, ReviewModule]
+	imports: [ConfigModule.forRoot(), PrismaModule, AuthModule, UserModule, StoreModule, ColorModule, CategoryModule, FileModule, ProductModule, ReviewModule, OrderModule]
 })
 export class AppModule {}
