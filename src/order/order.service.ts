@@ -42,7 +42,14 @@ export class OrderService {
 			}
 		})
 
-		return order
+		const items = orderItems.map(item => ({
+			quantity: item.quantity,
+			price: item.price,
+			productId: item.product.connect.id,
+			storeId: item.store.connect.id
+		}))
+
+		return { ...order, items }
 	}
 
 	async updateStatus(orderId: string) {
